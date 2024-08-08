@@ -141,7 +141,7 @@ KRNL.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 KRNL.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 KRNL.ResetOnSpawn = false
 
-KrnlGUI.Name = "AzureWare"
+KrnlGUI.Name = "KrnlGUI"
 KrnlGUI.Parent = KRNL
 KrnlGUI.Active = true
 KrnlGUI.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
