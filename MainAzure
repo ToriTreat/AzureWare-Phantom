@@ -240,7 +240,7 @@ ImageLabel.Parent = SideGUI
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.BackgroundTransparency = 1.000
 ImageLabel.Position = UDim2.new(0.00300000003, 0, 0.123999998, 0)
-ImageLabel.Size = UDim2.new(0.0361689702, 0, 0.726585209, 0)
+ImageLabel.Size = UDim2.new(0.1, 0, 0.8, 0)  -- Adjusted size
 ImageLabel.Image = "rbxassetid://18839118251"
 
 TextLabel.Parent = SideGUI
@@ -1289,7 +1289,7 @@ FloatingGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 FloatingGUI.BackgroundTransparency = 1.000
 FloatingGUI.Position = UDim2.new(0, 599, 0, 62)
 FloatingGUI.Size = UDim2.new(0, 39, 0, 39)
-FloatingGUI.Image = "rbxassetid://11671355800"
+FloatingGUI.Image = "rbxassetid://18839118251"
 
 -- Scripts:
 
