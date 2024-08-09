@@ -1,10 +1,12 @@
 -- config
-local repoName = "Executor.v2"
+local repoName = "AzureWare-Phantom"
 local repoOwner = "ToriTreat"
+
 -- variables
 local http_request = (syn and syn.request) or (http and http.request) or request or http_request
 local wrapperEnv = {}
 local loadedImports = {}
+
 -- functions
 local function wrapFuncGlobal(func, customFenv)
 	customFenv = customFenv or {}
@@ -79,19 +81,12 @@ local function import(path, branch)
 	return loadedFile
 end
 
---[[local function loadAsset(path, branch) -- DOESN'T WORK
-	branch = (branch or "main")
-	local assetId = (getcustomasset(`{repoName}/{branch}/{path}`) or "rbxassetid://0")
-
-	return assetId
-end--]]
 -- main
 do -- environment init
 	wrapperEnv["USING_TORI_LOADER"] = true
 	wrapperEnv["import"] = import
 	wrapperEnv["fetchFile"] = fetchFile
-	--wrapperEnv["loadAsset"] = loadAsset
 	wrapperEnv["DEV_MODE"] = DEV_MODE
 end
 
-return import("src/main.lua")(...)
+return import("MainAzure.lua")(...)
